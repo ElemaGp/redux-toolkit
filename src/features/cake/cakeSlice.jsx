@@ -10,10 +10,10 @@ const cakeSlice = createSlice({
   name: 'cake',
   initialState,
   reducers: {
-    ordered: state => { //"ordered" and "restocked" are the Action-Types. If the Action-Type is "ordered", numOfCakes is reduced by 1.
+    ordered: state => { //"ordered" and "restocked" are the actions. If the action is "ordered", numOfCakes is reduced by 1.
       state.numOfCakes--
     },
-    restocked: (state, action) => { //"ordered" and "restocked" are the Action-Types. If the Action-Type is "restocked", numOfCakes incremented by the number in the payload.
+    restocked: (state, action) => { //"ordered" and "restocked" are the actions. If the action is "restocked", numOfCakes incremented by the number in the payload.
       state.numOfCakes += action.payload
     }
   }

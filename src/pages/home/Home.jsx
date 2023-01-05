@@ -7,7 +7,7 @@ import { fetchUsers } from "../../features/user/userSlice"
 
 const Home = () => {
 
-  const user = useSelector(state => state.user)
+  const user = useSelector(state => state.user) // "const user" is declared to be equal to the "user" in userSlice.jsx.
   const dispatch = useDispatch()
 
   useEffect(() => {
