@@ -1,0 +1,9 @@
+.goToCakeBtn{
+    background-color: teal;
+    color: white;
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+}

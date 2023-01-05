@@ -3,11 +3,12 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchUsers } from "../../features/user/userSlice"
+import { Link } from "react-router-dom"
 
 
 const Home = () => {
 
-  const user = useSelector(state => state.user) // "const user" is declared to be equal to the "user" in userSlice.jsx.
+  const user = useSelector(state => state.user) // "const user" is declared to be equal to the "user" in userSlice.jsx. Meaning it now contains the initial state object properties that the "user" has in useSlice.jsx, and the properties' values will be updates accordingly when the actions are dispatched.
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -26,6 +27,10 @@ const Home = () => {
           ))}
         </ul>
       ) : null}
+
+      
+        <Link to="/cake" className="goToCakeBtn">Go to "Cake" page to see RTK being used to manage state in non-async operation </Link>
+      
     </div>
   )
 }
