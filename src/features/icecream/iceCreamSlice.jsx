@@ -17,7 +17,7 @@ const icecreamSlice = createSlice({
     }
   },
   extraReducers: builder => {
-    builder.addCase(cakeOrdered, state => { //"extraReducers" in non-async redux/rtk operations specify what happens to that feature if a change occurs in another feature. This is optional. Eg. in this case, if the cakeSlice's action "ordered" is dispatched (note that i imported the cakeSlice "ordered" action here above as "cakeOrdered"), then numOfIcecreams decrements by 1.
+    builder.addCase(cakeOrdered, state => {     //"extraReducers" in non-async redux/rtk operations specify what happens to that feature if a change occurs in another feature. This is optional. Eg. in this case, if the cakeSlice's action "ordered" is dispatched (note that i imported the cakeSlice "ordered" action here above as "cakeOrdered"), then numOfIcecreams decrements by 1.
       state.numOfIcecreams--
     })
   }
