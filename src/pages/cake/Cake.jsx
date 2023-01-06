@@ -16,6 +16,7 @@ export const Cake = () => {
 
         
             <Link to="/" className="goToHomeBtn">Go to "Home" page to see RTK being used to manage state in an async operation </Link>
+            <Link to="/icecream" className="goToHomeBtn">Go to "Icecream" page </Link>
         
       </div>
     )

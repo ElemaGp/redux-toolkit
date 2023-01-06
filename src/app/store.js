@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import cakeReducer from '../features/cake/cakeSlice'
-import icecreamReducer from '../features/icecream/icecreamSlice'
+import icecreamReducer from '../features/icecream/iceCreamSlice'
 import userReducer from '../features/user/userSlice'
 
 const store = configureStore({
