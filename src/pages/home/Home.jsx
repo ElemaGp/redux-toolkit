@@ -30,6 +30,7 @@ const Home = () => {
 
       
         <Link to="/cake" className="goToCakeBtn">Go to "Cake" page to see RTK being used to manage state in non-async operation </Link>
+        <Link to="/icecream" className="goToCakeBtn">Go to "Icecream" page to see RTK being used to manage state in non-async operation where whenecer a cake is bought, no.of icream reduces by 1</Link>
       
     </div>
   )
