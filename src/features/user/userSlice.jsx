@@ -1,4 +1,4 @@
-//This userSlice shows how to use rtk for async operations eg that have to do with APIs.
+//This userSlice shows how to use rtk for  managing state if async operations are involved eg that have to do with APIs.
 
 import axios from 'axios'
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
@@ -30,7 +30,7 @@ const userSlice = createSlice({
   name: 'user',
   initialState,
   extraReducers: builder => {
-    builder.addCase(fetchUsers.pending, state => {  //this means that if the case of the action is fetchUser.pending (ie fetchUsers_start), "state.loading" becomes true
+    builder.addCase(fetchUsers.pending, state => {  //this means that if the case of the action-type is fetchUser.pending (ie fetchUsers_start), "state.loading" becomes true
       state.loading = true
     })
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
